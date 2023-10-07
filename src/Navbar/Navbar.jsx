@@ -1,4 +1,4 @@
-import  { useContext } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import img from "../assets/user.png";
@@ -14,25 +14,25 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink className='hover:bg-red-700' to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to='/about'>About</NavLink>
+        <NavLink className='hover:bg-red-700' to="/about">About</NavLink>
       </li>
       <li>
-        <NavLink to='/booked'>My Bookings</NavLink>
+        <NavLink className='hover:bg-red-700' to="/booked">My Bookings</NavLink>
       </li>
       <li>
-        <NavLink to='/login'>Login</NavLink>
+        <NavLink className='hover:bg-red-700' to="/login">Login</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-black max-w-7xl mx-auto">
-      <div className="navbar-start">
+    <div className="navbar bg-black max-w-full mx-auto">
+      <div className="navbar-start pl-10">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-outline btn-accent lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -56,32 +56,29 @@ const Navbar = () => {
           </ul>
         </div>
         <img className="w-36 " src={logo} alt="" />
-        
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+      <div className="navbar-center text-white hidden lg:flex">
+        <ul className="menu menu-horizontal  px-1 ">{navLinks}</ul>
       </div>
-      <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <Link to="/login">
-              <img src={img} />
-            </Link>
-          </div>
-        </label>
-        {
-            User ?
-            <button onClick={handleLogout} className="btn  bg-gray-500">
-            Sign Out
-          </button>
-          :
-          <Link to='/login'>
-          <button className="btn bg-gray-700">Sign In</button>
+      <div className="navbar-end pr-10">
+        {User ? (
+          <>
+            <label tabIndex={0} className="btn btn-outline btn-accent btn-circle avatar">
+              <div className="w-10 rounded-full  ">
+               
+                  <img src={img} />
+                  
+              </div>
+            </label>
+            <button onClick={handleLogout} className="btn  bg-gray-100 text-black hover:bg-gray-500">
+              Sign Out
+            </button>
+          </>
+        ) : (
+          <Link to="/login">
+            <button className="btn bg-red-700 text-white hover:bg-gray-500">Sign In</button>
           </Link>
-
-        }
-
-       
+        )}
       </div>
     </div>
   );

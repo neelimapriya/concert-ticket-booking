@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <footer className="footer p-10 mt-5 bg-black text-neutral-content">
+        <footer className="footer p-10 mt-5 bg-black max-w-full mx-auto text-neutral-content justify-around">
   <aside>
-        <img src="../assets/star-box.jpg" alt="" />
+       
     <p className="text-2xl text-white font-semibold">Your Desired<br/> <span className="font-bold text-red-700">ADVERTISING</span> <br /> Agency</p>
   </aside> 
   <nav>

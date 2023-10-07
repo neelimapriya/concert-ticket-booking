@@ -36,7 +36,7 @@ const Login = () => {
 
 
   return (
-    <div className="mb-64 text-white ">
+    <div className="md:mb-64 text-white ">
       <h2 className="text-4xl mt-10 text-center">Please SignIn</h2>
       <form onSubmit={handleSignIn} className=" mx-auto md:w-3/4 lg:w-1/2">
         <div className="form-control mb-5">
