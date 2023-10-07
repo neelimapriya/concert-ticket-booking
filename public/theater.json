@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Theatre",
+        "description": "For the first time the Ministry of Cultural Affairs has organized a week-long theatre festival titled 'Bangladesh International Theatre Festival 2019' in collaboration with Bangladesh Shilpakala Academy (BSA), International Theatre Institute (Bangladesh Centre) and Bangladesh Group Theatre Federation.",
+        "name": "Bangladesh International Theatre Fest Kicks Off In The Capital",
+        "price": 89.99,
+        "location": "Bangladesh Shilpakala Academy (BSA)",
+        "thumbnail": "https://i.ibb.co/GFrvDbP/Daily-sun-2019-06-21-12.jpg",
+        "date":"November 3, 2023"
+      },
+      {
+        "id": 2,
+        "category": "Theatre",
+        "description": "Chronicling Bangladesh Theatre and Liberation War Plays inevitably persuades one to explore how proscenium theatre culture came in this subcontinent, especially in this part of India, that is Bengal, for, contrasted with our open-stage Jatra that does not divide the audience from the performers, a proscenium stage is the arch or opening separating the stage from the auditorium together with the area immediately in front of the arch.",
+        "name": "Bangladesh Theatre and Liberation War Plays",
+        "price": 89.99,
+        "location": "Dhaka, Bangladesh",
+        "thumbnail": "https://i.ibb.co/DK34rgg/Screenshot-2023-10-07-174415.png",
+        "date":"November 13, 2023"
+      },
+      {
+        "id": 3,
+        "category": "Theatre",
+        "description": "Bangladesh-born American dancer Margia Sriti enchanted the audience staging dance recitals at a programme held at the National Art Gallery Auditorium of Bangladesh Shilpakala Academy on Saturday.",
+        "name": "Margia Sriti enchants audience with classical dance",
+        "price": 89.99,
+        "location": "Bangladesh Shilpakala Academy",
+        "thumbnail": "https://i.ibb.co/Tm1MhGy/177287-132.jpg",
+        "date":"December 5, 2023"
+      },
+      {
+        "id": 4,
+        "category": "Theatre",
+        "description": " The China-Bangladesh Culture & Art Night was held with great success in Dhaka. The program was organized by the Embassy of China in Bangladesh and presented by Kunming National Song & Dance Theater, with the support by Bangladesh Shilpakala Academy (BSA). Mr. Liaquat Ali Lucky, Director General of BSA, H.E. Mr. Yao Wen, Ambassador of China to Bangladesh, H.E. Mr. Md. Abul Monsur, Secretary of the Ministry of Cultural Affairs of Bangladesh, and H.E. Mr. Shabbir Ahmad Chowdhury, Secretary (West) of Ministry of Foreign Affairs of Bangladesh, addressed the event.",
+        "name": "The China-Bangladesh Culture & Art Night Held in Dhaka.",
+        "price": 89.99,
+        "location": "Bangladesh Shilpakala Academy",
+        "thumbnail": "https://example.com/images/organic_spa_set_thumbnail.jpg",
+        "date":"March 4, 2024"
+      }
+]

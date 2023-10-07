@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Folk Festive",
+        "description": "The Philadelphia Folk Festival is a folk music festival held annually at Old Pool Farm in Upper Salford, Pennsylvania, just outside of Philadelphia. The hosting organization, the Philadelphia Folksong Society announced a pause in production, cancelling the 2023 festival for the first time in its 50 year history",
+        "name": "Philadelphia Folk Festival",
+        "price": 79.99,
+        "location": "Upper Salford Township, Pennsylvania, U.S",
+        "thumbnail": "https://i.ibb.co/02H2MKX/Philadelphia-Folk-Festival.jpg",
+        "date":"February 3, 2024"
+      },
+      {
+        "id": 2,
+        "category": "Folk Festive",
+        "description": "Another North Carolina Folk Festival has concluded with great success. Every year, downtown Greensboro becomes the focal point for musicians, dancers, performers, and artists who wish to share their talent and its cultural significance to the community.",
+        "name": "UNCG'S MUSICAL AND ARTISTIC TALENT SHINES AT NC FOLK FESTIVAL",
+        "price": 49.99,
+        "location":"Greensboro, Nc" ,
+        "thumbnail": "https://i.ibb.co/CnkNj7C/folk-fest2.jpg",
+        "date":"February 3, 2024"
+      },
+      {
+        "id": 3,
+        "category": "Folk Festive",
+        "description": "The fifth Dhaka International Folk Fest (DIFF) kicked off on Thursday at the Bangladesh Army Stadium like in previous years, with much enthusiasm among music lovers of the city.The opening day of the fifth DIFF saw a huge crowd waiting patiently  at Bangladesh Army Stadium on Thursday in long lines",
+        "name": "5th Dhaka International Folk Fest (DIFF) kicks off with versatile performances",
+        "price": 39.99,
+        "location": "Bangladesh Army Stadium",
+        "thumbnail": "https://i.ibb.co/brfrMC7/Screenshot-2023-10-07-173123.png",
+        "date":"February 3, 2024"
+      },
+      {
+        "id": 4,
+        "category": "Folk Festive",
+        "description": "State minister for information and communication technology Zunaid Ahmed Palak was present as chief guest while Bangladesh Shilpakala Academy director general Liaquat Ali Lucky was present as special guest at the closing ceremony. Director of the festival Fariha Jannat Mim anchored the event.",
+        "name": "14th Int'l Children's Film Festival Bangladesh ends",
+        "price": 39.99,
+        "location": "Bangladesh Shilpakala Academy",
+        "thumbnail": "https://i.ibb.co/vQ8HvZ5/Screenshot-2023-10-07-192936.png",
+        "date":"February 3, 2024"
+      }
+]

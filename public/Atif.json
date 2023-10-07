@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Atif Aslam",
+        "description": "An Atif Aslam event is more than a musical feast; it is a communal celebration of emotions and experiences. The resonance of his voice, combined with the lyrical depth of his songs, creates a cathartic atmosphere, allowing fans to revel in the joys and sorrows encapsulated in each melody. Whether he is serenading the crowd with romantic ballads like 'Tera Hone Laga Hoon' or stirring souls with poignant numbers like 'Jeene Laga Hoon,' Atif ensures that every heart leaves with a melody etched upon it.",
+        "name": "Atif Aslam performing live at New York! ",
+        "price": 299.99,
+        "location": "New York",
+        "thumbnail": "https://i.ibb.co/jLQ8hH2/atif4.png",
+        "date":"October 17, 2023."
+      },
+      {
+        "id": 2,
+        "category": "Atif Aslam",
+        "description": "Atif Aslam is a Pakistani playback singer and actor. He has recorded numerous chart topping songs in both Pakistan and India and is known for his vocal belting technique. He predominantly signs in Urdu and Hindi, but has also sung in Bengali, Pashtu and English. With successful chart-topping songs, he is often regarded as one of the all-time best playback singers in Indian and Pakistani music industries.",
+        "name": "Atif Aslam performing live at paramount fine food center Toronto",
+        "price": 199.99,
+        "location": "Toronto Canada",
+        "thumbnail": "https://i.ibb.co/BVMJjmW/383153011.jpg",
+        "date":"October 23, 2023."
+      },
+      {
+        "id": 3,
+        "category": "Atif Aslam",
+        "description": "When it comes to pop melody, Atif Aslam is one of the biggest names. The singer has sung some outstanding Hindi and Bollywood songs over the years.",
+        "name": "Atif Aslam performing live at Defence Raya Musical Extravaganza ",
+        "price": 129.99,
+        "location": "Defence Raya Golf & Country Club Lahore, Pakistan",
+        "thumbnail": "https://i.ibb.co/n8pyQCY/atiff.jpg",
+        "date":"January 3, 2024"
+      },
+      {
+        "id": 4,
+        "category": "Atif Aslam",
+        "description": " Yes, you have heard the right news. Singer ' ATIF ASLAM ' is coming to Dhaka, Bangladesh! More details will be revealed soon.",
+        "name": "Atif Aslam Coming to Dhaka",
+        "price": 169.99,
+        "location": "Gulshan,Dhaka, Bangladesh",
+        "thumbnail": "https://i.ibb.co/C71TGdq/atif1.jpg",
+        "date":"February 3, 2024"
+      }
+]

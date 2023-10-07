@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Film",
+        "description": "The film is the story of the fight of the youth of Bangladesh against an invisible force creating different social crises through the internet. The youth of Bangladesh are fighting hard to rescue Bangladesh from the invisible forces.",
+        "name": "Antarjal",
+        "price": 189.99,
+        "location": "Bashundhara City",
+        "thumbnail": "https://i.ibb.co/BcFs2Th/Screenshot-2023-10-07-191128.png",
+        "date":"November 3, 2023"
+      },
+      {
+        "id": 2,
+        "category": "Film",
+        "description": "A high-octane action thriller which outlines the emotional journey of a man who is set to rectify the wrongs in the society.",
+        "name": "Jawan",
+        "price": 89.99,
+        "location": "Bashundhara Shopping Mall, Panthapath",
+        "thumbnail": "https://i.ibb.co/DY9Dhr7/Screenshot-2023-10-07-191421.png",
+        "date":"November 13, 2023"
+      },
+      {
+        "id": 3,
+        "category": "Film",
+        "description": "Many engineers from around the world gather at the Interpol marine facility 'Pacific Buoy' on Hachijo-jima, in the off sea south of central Tokyo Prefecture coast, to witness the launch of a new system that connects all law enforcement camera systems around the world and enables facial recognition worldwide. Conan, along with his friends Kogoro, Ran, Agasa, Haibara, and the Detective Boys, also heads on the island with an invitation from Sonoko to see the whales.",
+        "name": "Detective Conan: Black Iron Submarine",
+        "price": 189.99,
+        "location": " Bashundhara Shopping Mall, Panthapath ",
+        "thumbnail": "https://i.ibb.co/F3LC33t/Screenshot-2023-10-07-191709.png",
+        "date":"December 5, 2023"
+      },
+      {
+        "id": 4,
+        "category": "Film",
+        "description": "The film revolves around a family's experiences during 1971, providing a poignant portrayal of the era.Apart from directing, Hridi Haq herself features in '1971 Shei Shob Din', alongside a talented ensemble cast comprising Mamunur Rashid, Jayanta Chattopadhyay, Munmun Ahmed, Shilpi Sharkar Apu, Ferdous, Tareen, Litu Anam, Saju Khadem, Sanjida Preeti, and many more. Notably, Litu Anam makes a remarkable comeback to cinema with this film, after a hiatus of 15 years.",
+        "name": "1971 Shei Shob Din.",
+        "price": 121.99,
+        "location": " Bashundhara Shopping Mall, Panthapath ",
+        "thumbnail": "https://i.ibb.co/ngjYXbv/Screenshot-2023-10-07-191945.png",
+        "date":"March 4, 2024"
+      }
+]
