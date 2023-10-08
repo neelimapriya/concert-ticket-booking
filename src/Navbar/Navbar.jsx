@@ -58,7 +58,7 @@ const Navbar = () => {
         <img className="w-36 " src={logo} alt="" />
       </div>
       <div className="navbar-center text-white hidden lg:flex">
-        <ul className="menu menu-horizontal  px-1 ">{navLinks}</ul>
+        <ul className="text-lg menu menu-horizontal  px-1 ">{navLinks}</ul>
       </div>
       <div className="navbar-end pr-10">
         {User ? (

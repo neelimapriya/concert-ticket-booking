@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Service = () => {
   return (
     <div className="text-center mt-5">
       <h2 className="text-4xl text-white font-semibold">Our Services</h2>
       <p className="mt-4 text-white mb-5">Book Your Ticket Before Sold Out.</p>
       <div className="grid space-x-5 space-y-5 md:grid-cols-2 lg:grid-cols-3">
+
         <div className="card card-compact  bg-black shadow-2xl p-5 h-[550px]">
           <figure>
             <img src={"https://i.ibb.co/0CB7Hj1/atif.png"} alt="atif" />
@@ -20,9 +23,11 @@ const Service = () => {
               and melodious singing style.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn bg-red-800 w-full text-white">
+              <Link to="/atif">
+                <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -45,9 +50,11 @@ const Service = () => {
               nephew of the legendary Qawwali singer Nusrat Fateh Ali Khan.
             </p>
             <div className="card-actions justify-end">
+              <Link to='/rahat'>
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -68,9 +75,10 @@ const Service = () => {
               industry.
             </p>
             <div className="card-actions justify-end">
-              <button className="btn bg-red-800 w-full text-white">
+             <Link to="/tahsan">
+             <button className="btn bg-red-800 w-full text-white">
                 View All
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -91,9 +99,10 @@ const Service = () => {
               the world and vary greatly in terms of scale and focus.
             </p>
             <div className="card-actions justify-end">
+              <Link to="/folk">
               <button className="btn bg-red-800 w-full text-white">
                 View All
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -109,9 +118,10 @@ const Service = () => {
             Our goal is to provide the most modern, comfortable, cinema viewing experience of Hollywood and quality Dhallywood releases for a locally adjusted price for our youth and family centered audiences in Dhaka . We aim to be the highest-value entertainment provider in Bangladesh with integrity & professionalism in every step.
             </p>
             <div className="card-actions justify-end">
+              <Link to="/film">
               <button className="btn bg-red-800 w-full text-white">
                 View All
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -126,10 +136,12 @@ const Service = () => {
             <p>
             The Bangladesh Shilpakala Academy (BSA) is a prominent cultural institution in Bangladesh that promotes and supports various forms of art and culture, including theater. It provides a platform for artists and performers to showcase their talents and contribute to the countrys rich cultural heritage.
             </p>
-            <div className="card-actions justify-end">
+            <div className="card-actions justify-end w-full">
+              <Link to="/theater">
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>
+              </Link>
             </div>
           </div>
         </div>
