@@ -29,8 +29,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-black max-w-full mx-auto">
-      <div className="navbar-start pl-10">
+    <div className="navbar   bg-black max-w-full mx-auto">
+      <div className="navbar-start md:pl-10">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-outline btn-accent lg:hidden">
             <svg
@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className="navbar-center text-white hidden lg:flex">
         <ul className="text-lg menu menu-horizontal  px-1 ">{navLinks}</ul>
       </div>
-      <div className="navbar-end pr-10">
+      <div className="navbar-end sm:grid md:grid-cols-2 ">
         {User ? (
           <>
             <label tabIndex={0} className="btn btn-outline btn-accent btn-circle avatar">
@@ -70,7 +70,7 @@ const Navbar = () => {
                   
               </div>
             </label>
-            <button onClick={handleLogout} className="btn  bg-gray-100 text-black hover:bg-gray-500">
+            <button onClick={handleLogout} className="btn w-32 bg-gray-100 text-black hover:bg-gray-500">
               Sign Out
             </button>
           </>

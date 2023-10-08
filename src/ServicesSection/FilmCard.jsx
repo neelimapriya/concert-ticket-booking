@@ -1,7 +1,44 @@
-import React from 'react';
+import Swal from 'sweetalert2'
 
 const FilmCard = ({film}) => {
     const { id, name, description, price, location, thumbnail, date } = film;
+
+    const handleAddBook=()=>{
+      const addedBooked =[];
+  
+      const bookedItem=JSON.parse(localStorage.getItem('booked'))
+  
+      if(!bookedItem){
+        addedBooked.push(film)
+        localStorage.setItem('booked', JSON.stringify(addedBooked))
+        Swal.fire(
+          'Thank You!',
+          'For booked Ticket with STARBOX!',
+          'success'
+        )
+      }else{
+        const itemExist=bookedItem.find(film =>film.id == id)
+  
+        if(!itemExist){
+          addedBooked.push(...bookedItem, film)
+          localStorage.setItem('booked', JSON.stringify(addedBooked))
+          
+          Swal.fire(
+            'Thank You!',
+            'For booked Ticket with STARBOX!',
+            'success'
+          )
+        }else{
+          Swal.fire(
+            'Sorry!',
+            'You have already booked this!',
+            'error'
+          )
+        }
+  
+      }
+    }
+
     return (
       <div className="card  bg-gray-300 text-black shadow-xl ">
         <figure className="p-5">
@@ -14,7 +51,7 @@ const FilmCard = ({film}) => {
           <p className="text-xl">Date: {date}</p>
           <p className="text-2xl font-bold">Ticket Price: {price}$</p>
           <div className="card-actions justify-end">
-            <button className="btn w-full bg-red-700 text-white">Book Now</button>
+            <button onClick={handleAddBook} className="btn w-full bg-red-700 text-white">Book Now</button>
           </div>
         </div>
       </div>
