@@ -28,6 +28,7 @@ const Login = () => {
     .then(result=>{
         console.log(result.user)
         e.target.reset()
+        
 
         // navigate to private route
     navigate(location?.state ? location.state : '/')
@@ -45,6 +46,8 @@ const Login = () => {
     .then(result=>{
       const user =result.user;
       console.log(user)
+      navigate(location?.state ? location.state : '/')
+      
     })
     .catch(error=>{
       console.error(error.message)

@@ -38,6 +38,7 @@ const Register = () => {
         newUser(email, password)
         .then(result=>{
             console.log(result.user)
+            
             e.target.reset()
         })
         .catch(error=>{
