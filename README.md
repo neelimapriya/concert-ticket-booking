@@ -6,7 +6,7 @@
 
 ### 5 project features and functionalities of my website.
 
--  In this project i added private routes if someone want to visit these you must have to register or sign in.
+-  In this project i added private routes if someone want to visit these they must have to register or signin this website.
 
 -  In this project i added some Question Answer section which may help visitors of this site.
 
