@@ -2,9 +2,12 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
+
 const Login = () => {
 
-    const {signIn}=useContext(AuthContext);
+  
+
+    const {signIn,GoogleSignIn}=useContext(AuthContext);
     const navigate =useNavigate();
     const location =useLocation();
     console.log('location', location)
@@ -36,6 +39,18 @@ const Login = () => {
     
 
   };
+
+  const handleSignInGoogle=()=>{
+    GoogleSignIn()
+    .then(result=>{
+      const user =result.user;
+      console.log(user)
+    })
+    .catch(error=>{
+      console.error(error.message)
+    })
+
+  }
 
 
 
@@ -75,6 +90,10 @@ const Login = () => {
       {
         errorMessage && <p className=" text-center text-xl text-red-600">{errorMessage}</p>
       }
+      <div onClick={handleSignInGoogle} className="">
+      
+        <p className="hover:text-red-400  text-xl text-center items-center justify-center"> Sign In with Google?</p></div>
+
       <p className="text-center mt-4">
         Do not have an account ?
         <Link className="text-red-600 font-bold" to="/register">

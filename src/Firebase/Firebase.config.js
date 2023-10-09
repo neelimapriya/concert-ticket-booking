@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyANlKUACVmJPclj2aXuK9OKvp0ciCmAGI0",
-  authDomain: "star-box-ticket.firebaseapp.com",
-  projectId: "star-box-ticket",
-  storageBucket: "star-box-ticket.appspot.com",
-  messagingSenderId: "435100711429",
-  appId: "1:435100711429:web:e0c809920895c5b829fa6c"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain:  import.meta.env.VITE_AUTHDOMAIN,
+  projectId:  import.meta.env.VITE_PROJECTID,
+  storageBucket:  import.meta.env.VITE_VITE_STORAGEBUCKET,
+  messagingSenderId:  import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:  import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase

@@ -79,7 +79,7 @@ const Navbar = () => {
                 <img src={img} />
               </div>
             </label>
-            {/* <p>{User.displayName}</p> */}
+            
             <button
               onClick={handleLogout}
               className="btn w-32 bg-gray-100 text-black hover:bg-gray-500"
@@ -95,6 +95,9 @@ const Navbar = () => {
           </Link>
         )}
       </div>
+      {
+        User && <p className="text-red-600 font-semibold">{User.displayName}</p> 
+      }
     </div>
   );
 };

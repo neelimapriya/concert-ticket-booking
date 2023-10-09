@@ -104,11 +104,13 @@ const Register = () => {
                   <button className="btn btn-accent">Register</button>
                 </div>
       </form>
+      
       <p className="text-center mt-4">Alreday have an account ?<Link className="text-blue-700 font-bold" to='/login'>Please Signin</Link></p>
   
   
       </div>
     );
 };
+
 
 export default Register;

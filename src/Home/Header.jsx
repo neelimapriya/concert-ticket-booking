@@ -3,7 +3,8 @@ import banner from '../assets/Banner.png'
 
 const Header = () => {
     return (
-        <div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000">
             
 
             <img src={banner} alt="" />
