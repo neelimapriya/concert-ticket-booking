@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from 'sweetalert2'
@@ -9,6 +9,7 @@ import { updateProfile } from "firebase/auth";
 const Register = () => {
 
     const {newUser}=useContext(AuthContext)
+    const [errorMessage, setErrorMessage ]=useState('')
    
     
 
@@ -77,14 +78,8 @@ const Register = () => {
 
         .catch(error=>{
             console.log(error)
-           
-            Swal.fire({
-              icon: 'error',
-              title: 'Please make sure your email is correct or try with a new email address',
-              
+            setErrorMessage(error.message)
             
-            })
-           
         })
 
         
@@ -117,7 +112,7 @@ const Register = () => {
                     placeholder="Photo url"
                     className="input input-bordered"
                     name="photo"
-                    required
+                   
                   />
                 </div>
       <div className="form-control">
@@ -158,7 +153,9 @@ const Register = () => {
       <p className="text-center mt-4">Alreday have an account ?<Link className="text-blue-700 font-bold" to='/login'>Please Signin</Link></p>
      </div>
   
-  
+      {
+        errorMessage && <p className="text-red-600 text-center pt-3 ">Error: {errorMessage}</p>
+      }
       </div>
     );
 };
