@@ -68,7 +68,7 @@ const Navbar = () => {
       <div className="navbar-center text-white hidden lg:flex">
         <ul className="text-lg menu menu-horizontal  px-1 ">{navLinks}</ul>
       </div>
-      <div className="navbar-end sm:grid md:grid-cols-2 ">
+      <div className="navbar-end space-x-3 ">
         {User ? (
           <>
             <label
@@ -79,6 +79,7 @@ const Navbar = () => {
                 <img src={img} />
               </div>
             </label>
+            <p className="text-red-600 font-semibold ">{User.displayName}</p> 
             
             <button
               onClick={handleLogout}
@@ -95,9 +96,7 @@ const Navbar = () => {
           </Link>
         )}
       </div>
-      {
-        User && <p className="text-red-600 font-semibold">{User.displayName}</p> 
-      }
+     
     </div>
   );
 };

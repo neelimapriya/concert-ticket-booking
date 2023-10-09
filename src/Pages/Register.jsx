@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from 'sweetalert2'
+import { updateProfile } from "firebase/auth";
 
 
 
@@ -21,29 +22,74 @@ const Register = () => {
         const email =form.get('email');
         const password =form.get('password');
         console.log(name, photo, email, password)
-        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}$/;
+        // const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}$/;
 
-        if(!passwordRegex.test(password)){
+        // if(!passwordRegex.test(password)){
+        //   Swal.fire({
+        //     icon: 'error',
+        //     title: 'Your password should be up to 6 characters, atleast a capital letter and a special character',
+            
+          
+        //   })
+        //   return;
+          
+        // }
+
+
+        if(password.length <6){
           Swal.fire({
             icon: 'error',
-            title: 'Your password should be up to 6 characters, atleast a capital letter and a special character',
+            title: 'Your password should be up to 6 characters',
             
           
           })
-          return;
+      }
+      else if(!/[A-Z]/.test(password)){
+        Swal.fire({
+          icon: 'error',
+          title: 'Your Password Should have at least one upper case character',
           
-        }
+        
+        })
+          return;
+      }else if(!/[!@#$%^&*()_+]/.test(password)){
+        Swal.fire({
+          icon: 'error',
+          title: 'Your Password Should have at least one special character',
+          
+        
+        })
+          return;
+      }
+
 
         // new user
         newUser(email, password)
         .then(result=>{
             console.log(result.user)
+
+            updateProfile(result.user,{
+              displayName:name
+            }).then()
+            .catch(error=>{
+              console.log(error)
+            })
+
+            Swal.fire({
+              icon: 'success',
+              title: 'user created successfully',
+              
             
+            })
+
             e.target.reset()
         })
+
         .catch(error=>{
             console.error(error)
         })
+
+        
         
     }
 
