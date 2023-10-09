@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar   bg-zinc-950 max-w-full mx-auto">
-      <div className="navbar-start md:pl-10">
+      <div className="navbar-start  md:pl-10">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-outline btn-accent lg:hidden">
             <svg
@@ -63,7 +63,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <img className="w-36 " src={logo} alt="" />
+        <img className="w-20  md:w-36 " src={logo} alt="" />
       </div>
       <div className="navbar-center text-white hidden lg:flex">
         <ul className="text-lg menu menu-horizontal  px-1 ">{navLinks}</ul>
@@ -75,7 +75,7 @@ const Navbar = () => {
               tabIndex={0}
               className="btn btn-outline btn-accent btn-circle avatar"
             >
-              <div className="w-10 rounded-full  ">
+              <div className=" w-10 rounded-full  ">
                 <img src={img} />
               </div>
             </label>
