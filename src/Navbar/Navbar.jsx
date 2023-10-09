@@ -14,22 +14,30 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink className='hover:bg-red-700' to="/">Home</NavLink>
+        <NavLink className="hover:bg-red-700" to="/">
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink className='hover:bg-red-700' to="/about">About</NavLink>
+        <NavLink className="hover:bg-red-700" to="/about">
+          About
+        </NavLink>
       </li>
       <li>
-        <NavLink className='hover:bg-red-700' to="/booked">My Bookings</NavLink>
+        <NavLink className="hover:bg-red-700" to="/booked">
+          My Bookings
+        </NavLink>
       </li>
       <li>
-        <NavLink className='hover:bg-red-700' to="/login">Login</NavLink>
+        <NavLink className="hover:bg-red-700" to="/login">
+          Login
+        </NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar   bg-black max-w-full mx-auto">
+    <div className="navbar   bg-zinc-950 max-w-full mx-auto">
       <div className="navbar-start md:pl-10">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-outline btn-accent lg:hidden">
@@ -63,20 +71,27 @@ const Navbar = () => {
       <div className="navbar-end sm:grid md:grid-cols-2 ">
         {User ? (
           <>
-            <label tabIndex={0} className="btn btn-outline btn-accent btn-circle avatar">
+            <label
+              tabIndex={0}
+              className="btn btn-outline btn-accent btn-circle avatar"
+            >
               <div className="w-10 rounded-full  ">
-               
-                  <img src={img} />
-                  
+                <img src={img} />
               </div>
             </label>
-            <button onClick={handleLogout} className="btn w-32 bg-gray-100 text-black hover:bg-gray-500">
+            {/* <p>{User.displayName}</p> */}
+            <button
+              onClick={handleLogout}
+              className="btn w-32 bg-gray-100 text-black hover:bg-gray-500"
+            >
               Sign Out
             </button>
           </>
         ) : (
           <Link to="/login">
-            <button className="btn bg-red-700 text-white hover:bg-gray-500">Sign In</button>
+            <button className="btn bg-red-700 text-white hover:bg-gray-500">
+              Sign In
+            </button>
           </Link>
         )}
       </div>

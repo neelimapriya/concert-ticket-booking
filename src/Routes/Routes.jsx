@@ -34,7 +34,7 @@ import PrivateRoute from "./PrivateRoute";
         },
         {
             path:'/booked',
-            element:<MyBookings></MyBookings>,
+            element:<PrivateRoute><MyBookings></MyBookings></PrivateRoute>,
         
         },
         {

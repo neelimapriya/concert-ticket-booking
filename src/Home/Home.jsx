@@ -1,6 +1,7 @@
 
 import Header from './Header';
-import QA from './QA';
+
+import QAns from './QAns';
 import Service from './Service';
 import Contact from './contact';
 
@@ -11,7 +12,7 @@ const Home = () => {
             <Header></Header>
             <Service></Service>
             <Contact></Contact>
-            <QA></QA>
+            <QAns></QAns>
         </div>
     );
 };

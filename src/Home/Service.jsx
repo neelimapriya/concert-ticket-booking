@@ -22,8 +22,8 @@ const Service = () => {
               Pakistan. Atif Aslam gained widespread recognition for his soulful
               and melodious singing style.
             </p>
-            <div className="card-actions justify-end">
-              <Link to="/atif">
+            <div className="card-actions justify-end ">
+              <Link className="w-full" to="/atif">
                 <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>
@@ -50,7 +50,7 @@ const Service = () => {
               nephew of the legendary Qawwali singer Nusrat Fateh Ali Khan.
             </p>
             <div className="card-actions justify-end">
-              <Link to='/rahat'>
+              <Link className="w-full" to='/rahat'>
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>
@@ -75,7 +75,7 @@ const Service = () => {
               industry.
             </p>
             <div className="card-actions justify-end">
-             <Link to="/tahsan">
+             <Link className="w-full" to="/tahsan">
              <button className="btn bg-red-800 w-full text-white">
                 View All
               </button></Link>
@@ -99,7 +99,7 @@ const Service = () => {
               the world and vary greatly in terms of scale and focus.
             </p>
             <div className="card-actions justify-end">
-              <Link to="/folk">
+              <Link className="w-full" to="/folk">
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button></Link>
@@ -118,7 +118,7 @@ const Service = () => {
             Our goal is to provide the most modern, comfortable, cinema viewing experience of Hollywood and quality Dhallywood releases for a locally adjusted price for our youth and family centered audiences in Dhaka . We aim to be the highest-value entertainment provider in Bangladesh with integrity & professionalism in every step.
             </p>
             <div className="card-actions justify-end">
-              <Link to="/film">
+              <Link className="w-full" to="/film">
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button></Link>
@@ -137,7 +137,7 @@ const Service = () => {
             The Bangladesh Shilpakala Academy (BSA) is a prominent cultural institution in Bangladesh that promotes and supports various forms of art and culture, including theater. It provides a platform for artists and performers to showcase their talents and contribute to the countrys rich cultural heritage.
             </p>
             <div className="card-actions justify-end w-full">
-              <Link to="/theater">
+              <Link className="w-full" to="/theater">
               <button className="btn bg-red-800 w-full text-white">
                 View All
               </button>

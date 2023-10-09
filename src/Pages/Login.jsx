@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
@@ -8,6 +8,7 @@ const Login = () => {
     const navigate =useNavigate();
     const location =useLocation();
     console.log('location', location)
+    const [errorMessage, setErrorMessage ]=useState('')
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -15,6 +16,8 @@ const Login = () => {
     const email=form.get('email');
     const password =form.get('password')
     console.log(email,password)
+
+    setErrorMessage("")
 
 
 
@@ -28,6 +31,7 @@ const Login = () => {
     })
     .catch(error=>{
         console.error(error)
+        setErrorMessage(error.message)
     })
     
 
@@ -68,6 +72,9 @@ const Login = () => {
           <button className="btn bg-red-600 text-white">Sign In</button>
         </div>
       </form>
+      {
+        errorMessage && <p className=" text-center text-xl text-red-600">{errorMessage}</p>
+      }
       <p className="text-center mt-4">
         Do not have an account ?
         <Link className="text-red-600 font-bold" to="/register">
