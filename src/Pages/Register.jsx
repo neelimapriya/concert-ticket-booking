@@ -9,6 +9,7 @@ import { updateProfile } from "firebase/auth";
 const Register = () => {
 
     const {newUser}=useContext(AuthContext)
+   
     
 
     const handleRegister=(e)=>{
@@ -18,22 +19,11 @@ const Register = () => {
         const form=new FormData(e.currentTarget);
         const name =form.get('name');
         
-        const photo=form.get('photo');
+        // const photo=form.get('photo');
         const email =form.get('email');
         const password =form.get('password');
-        console.log(name, photo, email, password)
-        // const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}$/;
-
-        // if(!passwordRegex.test(password)){
-        //   Swal.fire({
-        //     icon: 'error',
-        //     title: 'Your password should be up to 6 characters, atleast a capital letter and a special character',
-            
-          
-        //   })
-        //   return;
-          
-        // }
+        // console.log(name, photo, email, password)
+        
 
 
         if(password.length <6){
@@ -86,7 +76,15 @@ const Register = () => {
         })
 
         .catch(error=>{
-            console.error(error)
+            console.log(error)
+           
+            Swal.fire({
+              icon: 'error',
+              title: 'Please make sure your email is correct or try with a new email address',
+              
+            
+            })
+           
         })
 
         
@@ -150,9 +148,15 @@ const Register = () => {
                 <div className="form-control mt-6">
                   <button className="btn btn-accent">Register</button>
                 </div>
+               
       </form>
       
+      
+
+     <div>
+     
       <p className="text-center mt-4">Alreday have an account ?<Link className="text-blue-700 font-bold" to='/login'>Please Signin</Link></p>
+     </div>
   
   
       </div>

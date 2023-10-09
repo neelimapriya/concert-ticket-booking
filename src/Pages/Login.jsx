@@ -10,7 +10,7 @@ const Login = () => {
     const {signIn,GoogleSignIn}=useContext(AuthContext);
     const navigate =useNavigate();
     const location =useLocation();
-    console.log('location', location)
+    // console.log('location', location)
     const [errorMessage, setErrorMessage ]=useState('')
 
   const handleSignIn = (e) => {
@@ -18,7 +18,7 @@ const Login = () => {
     const form =new FormData(e.currentTarget);
     const email=form.get('email');
     const password =form.get('password')
-    console.log(email,password)
+    // console.log(email,password)
 
     setErrorMessage("")
 
@@ -93,7 +93,7 @@ const Login = () => {
       {
         errorMessage && <p className=" text-center text-xl text-red-600">{errorMessage}</p>
       }
-      <div onClick={handleSignInGoogle} className="">
+      <div onClick={handleSignInGoogle} className=" cursor-pointer">
       
         <p className="hover:text-red-400  text-xl text-center items-center justify-center"> Sign In with Google?</p></div>
 
